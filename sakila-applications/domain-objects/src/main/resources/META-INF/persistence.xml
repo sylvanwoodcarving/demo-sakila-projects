@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="sakila-domain-objects:appPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>org.jmresler.sakila.domain.Rental</class>
+    <class>org.jmresler.sakila.domain.ActorInfo</class>
+    <class>org.jmresler.sakila.domain.Film</class>
+    <class>org.jmresler.sakila.domain.Inventory</class>
+    <class>org.jmresler.sakila.domain.Staff</class>
+    <class>org.jmresler.sakila.domain.Store</class>
+    <class>org.jmresler.sakila.domain.FilmCategory</class>
+    <class>org.jmresler.sakila.domain.Language</class>
+    <class>org.jmresler.sakila.domain.FilmText</class>
+    <class>org.jmresler.sakila.domain.FilmActor</class>
+    <class>org.jmresler.sakila.domain.StaffList</class>
+    <class>org.jmresler.sakila.domain.FilmList</class>
+    <class>org.jmresler.sakila.domain.Customer</class>
+    <class>org.jmresler.sakila.domain.CustomerList</class>
+    <class>org.jmresler.sakila.domain.Actor</class>
+    <class>org.jmresler.sakila.domain.Country</class>
+    <class>org.jmresler.sakila.domain.City</class>
+    <class>org.jmresler.sakila.domain.SalesByFilmCategory</class>
+    <class>org.jmresler.sakila.domain.SalesByStore</class>
+    <class>org.jmresler.sakila.domain.NicerButSlowerFilmList</class>
+    <class>org.jmresler.sakila.domain.Address</class>
+    <class>org.jmresler.sakila.domain.Payment</class>
+    <class>org.jmresler.sakila.domain.Category</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/sakila?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="sakila"/>
+    </properties>
+  </persistence-unit>
+</persistence>

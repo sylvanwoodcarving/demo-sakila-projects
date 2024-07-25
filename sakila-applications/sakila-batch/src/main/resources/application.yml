@@ -1,0 +1,12 @@
+logging:
+  level:
+    root: warning
+    '[org.jmresler.sakila.batch]': debug
+
+application:
+  chunk:
+    size: 100
+
+spring:
+  application:
+    name: sakila-batch
