@@ -1,0 +1,8 @@
+rootProject.name = 'sakila-applications'
+include('domain-objects')
+include('sakila-batch')
+include('sakila-events')
+include('sakila-rest')
+include('sakila-reporting')
+include 'sakila-reporting'
+
